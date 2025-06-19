@@ -1,0 +1,29 @@
+.foot-head {
+  font-size: 60px;
+  font-weight: 800;
+  padding-top: 30px;
+  background: linear-gradient(90deg, #00dbde, #0073ff); /* Customize colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox (optional fallback) */
+  color: transparent;
+}
+
+.foot-btn {
+  color: white;
+  text-decoration: none;
+}
+
+.foot-btn:hover {
+  color: #00dbde;
+  text-decoration: underline;
+}
+
+.social-btn {
+  border-color: black !important;
+}
+
+.social-btn:hover {
+  color: black !important;
+  background-color: white !important;
+}

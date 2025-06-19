@@ -1,0 +1,50 @@
+.ser-head {
+  font-weight: 700;
+  font-size: 60px;
+  padding-top: 25px;
+}
+
+.service-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background-color: #909090;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 1rem;
+  z-index: 10;
+}
+
+.card-text {
+  color: rgb(0, 200, 255);
+}
+
+.card-img-top {
+  height: 400px;
+  width: 600px;
+}
+
+.card-body {
+  background-color: #0e1b3a;
+  border-radius: 18px;
+  margin-top: -25px; /* adjust as needed */
+  /* background-color: white; or transparent if image should show */
+  /* border-radius: 1rem; */
+  position: relative;
+  z-index: 1;
+}
+
+hr {
+  height: 2px;
+  background-color: #000000; /* or any color */
+  border: none;
+}

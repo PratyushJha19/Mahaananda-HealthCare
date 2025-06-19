@@ -1,0 +1,46 @@
+.faq-section {
+  background-color: #f9f9f9;
+}
+
+.faq-box {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-box:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.faq-star {
+  font-size: 28px;
+  color: #ff7a00;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.faq-question {
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f8f9fa;
+}
+
+.faq-question h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+.faq-toggle-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.faq-question p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}

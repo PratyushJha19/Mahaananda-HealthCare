@@ -1,0 +1,54 @@
+.navbar {
+  background-color: #0e1b3a;
+}
+
+.nav-head h1 {
+  color: rgb(0, 102, 255);
+  font-size: xx-large;
+}
+
+.nav-head:hover h1 {
+  color: #00c3ff !important;
+}
+
+.nav-btn {
+  border-radius: 50px !important;
+  border-width: thick !important;
+  border-color: rgba(0, 138, 216, 10) !important;
+}
+
+.nav-link:hover {
+  color: #00c8ff !important;
+  text-decoration: underline;
+
+  border-radius: 50px !important;
+  border-width: thick !important;
+  border-color: rgba(0, 138, 216, 10) !important;
+}
+
+.btn {
+  color: black !important;
+}
+
+.btn-gradient-custom {
+  background: linear-gradient(135deg, #4c8aff, #1fc7ec);
+  color: white !important;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 60px;
+}
+
+.btn-gradient-custom:hover {
+  /* transform: translateY(-2px); */
+  color: black !important;
+  box-shadow: 0 8px 20px rgba(0, 132, 255, 0.3);
+}
+
+/* Right circular icon area */
+.btn-circle {
+  background: white;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}

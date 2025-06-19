@@ -1,0 +1,251 @@
+.home-head {
+  background-image: url("/public/tooth.png"); /* adjust path if in /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-section {
+  padding: 80px 20px;
+  background-color: rgba(38, 38, 38, 0.25);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00fbff, #001aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  margin-bottom: 100px;
+  font-family: "Outfit", "Inter", sans-serif;
+}
+
+.hero-btn {
+  /*border-width: thick;
+   border-color: ; */
+  border: none;
+  background: linear-gradient(to right, #00dbde, #142bf6);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Nunito", "Inter", sans-serif;
+}
+
+/* .hero-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+
+  color: rgba(0, 138, 216, 10);
+} */
+
+.hero-btn:hover {
+  transition-duration: 0.5s;
+  color: navy;
+  background: linear-gradient(135deg, #4c8aff, #1fc7ec);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.full-sec {
+  background-color: rgba(31, 31, 31, 0.75);
+}
+
+.hero-card {
+  background: linear-gradient(to bottom right, #e0f7fa, #aa87ec);
+  padding: 30px;
+  border-radius: 25px;
+  position: relative;
+  width: 300px;
+}
+
+.doctor-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.doc-badge {
+  position: absolute;
+  top: 70px;
+  left: 60px;
+  background: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.badge-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.badge {
+  background: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.tooth-img {
+  width: 220px;
+  height: auto;
+}
+
+.hero-stats {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  text-align: right;
+}
+.card-text {
+  padding-top: 20px;
+  color: #0040b7;
+  font-size: x-large;
+  font-weight: 600;
+  font-family: "Outfit", "Inter", sans-serif;
+}
+
+/* SLIDER CSS */
+/* Container with overflow */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 24px;
+  width: fit-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.pill {
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pill.blue {
+  background: linear-gradient(to right, #23e5ff, #166fff);
+}
+
+.pill.green {
+  background: linear-gradient(to right, #aa87ec, #2dd4bf);
+}
+
+.separator {
+  color: #f97316;
+  font-size: 24px;
+  align-self: center;
+}
+
+/* ✅ Infinite seamless scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🧠 Magic: duplicate the content exactly once */
+
+/* .slider-container:hover .slider-track {
+  animation-play-state: paused;
+} */
+
+/* SECTION 3 */
+.sec-3 {
+  background-image: url("/public/tooth.png"); /* adjust path if in /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.sec-3-head {
+  background-color: rgba(38, 38, 38, 0.25);
+  padding-top: 30px;
+}
+
+.sec-3-head h1 {
+  font-family: "Nunito", "Inter", "sans-serif";
+  font-size: 60px;
+  font-weight: 600;
+  padding-top: 100px;
+  color: #000851;
+}
+
+.sec-3-txt {
+  padding-top: 30px;
+  color: black;
+  font-weight: 600;
+  font-size: larger;
+  font-family: "Nunito", "Inter", "sans-serif";
+}
+
+.gradient-text-2 {
+  /* background: linear-gradient(to right, #00fbff, #001aff); */
+  color: #000851;
+  font-size: 50px !important;
+  font-family: "Nunito", "Inter", sans-serif;
+}
+
+.gradient-text-2 span {
+  background: linear-gradient(to right, #5600f7, #00ffdd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px !important;
+  font-family: "Nunito", "Inter", sans-serif;
+}
+
+/* ------------------------------------------------- */
+
+.sec-4 {
+  background-image: url("/public/tooth.png"); /* adjust path if in /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.sec-4-head {
+  background-color: rgba(38, 38, 38, 0.25);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.sec-4-head h1 {
+  color: #000851;
+  font-size: 50px;
+  font-weight: 600;
+}
