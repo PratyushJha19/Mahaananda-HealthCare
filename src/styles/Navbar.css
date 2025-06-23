@@ -1,3 +1,4 @@
+/* Original Styles Unchanged */
 .navbar {
   background-color: #0e1b3a;
 }
@@ -20,7 +21,6 @@
 .nav-link:hover {
   color: #00c8ff !important;
   text-decoration: underline;
-
   border-radius: 50px !important;
   border-width: thick !important;
   border-color: rgba(0, 138, 216, 10) !important;
@@ -40,15 +40,40 @@
 }
 
 .btn-gradient-custom:hover {
-  /* transform: translateY(-2px); */
   color: black !important;
   box-shadow: 0 8px 20px rgba(0, 132, 255, 0.3);
 }
 
-/* Right circular icon area */
 .btn-circle {
   background: white;
   border-radius: 50%;
   width: 34px;
   height: 34px;
+}
+
+/* ✅ Only this part added */
+@media (max-width: 768px) {
+  .nav-head h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+
+  .btn-gradient-custom {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Make hamburger icon white */
+.navbar-toggler {
+  border-color: white;
+}
+
+/* Change the bars (icon lines) to white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
