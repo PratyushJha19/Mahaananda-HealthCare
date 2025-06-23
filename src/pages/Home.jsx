@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/Home.css";
 import ReviewCarousel from "../components/ReviewCarousel.jsx"; // Adjust path if different
+import { Link } from "react-router-dom";
 
 const services = [
   "General Dentistry",
@@ -47,18 +48,20 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="slider-container">
-        <div className="slider-track">
-          {[...services, ...services].map((service, index) => (
-            <React.Fragment key={index}>
-              <div className={`pill ${index % 2 === 0 ? "blue" : "green"}`}>
-                {service.toUpperCase()}
-              </div>
-              {/* <div className="separator">*</div> */}
-            </React.Fragment>
-          ))}
+      <Link to="/services" className="slider-link-wrapper">
+        <div className="slider-container">
+          <div className="slider-track">
+            {[...services, ...services].map((service, index) => (
+              <React.Fragment key={index}>
+                <div className={`pill ${index % 2 === 0 ? "blue" : "green"}`}>
+                  {service.toUpperCase()}
+                </div>
+                {/* <div className="separator">*</div> */}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-      </div>
+      </Link>
 
       <div className="sec-3">
         <div className="sec-3-head">
