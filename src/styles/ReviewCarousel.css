@@ -16,6 +16,7 @@
   display: flex;
   gap: 20px;
   overflow: hidden;
+  transition: transform 0.8s ease-in-out;
 }
 
 .carousel-card {
@@ -24,6 +25,10 @@
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
+}
+
+.slide-animation {
+  animation: slideEffect 0.8s ease-in-out;
 }
 
 .nav {
@@ -54,4 +59,30 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@keyframes slideEffect {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1s ease-in-out;
 }

@@ -25,26 +25,77 @@
 }
 
 .card-text {
-  color: rgb(0, 200, 255);
+  color: rgb(0, 200, 255) !important;
+  font-weight: 500;
 }
 
 .card-img-top {
   height: 400px;
   width: 600px;
+  object-fit: cover;
 }
 
 .card-body {
   background-color: #0e1b3a;
   border-radius: 18px;
-  margin-top: -25px; /* adjust as needed */
-  /* background-color: white; or transparent if image should show */
-  /* border-radius: 1rem; */
+  margin-top: -25px;
   position: relative;
   z-index: 1;
+  padding: 20px;
 }
 
+/* Toggle arrow button */
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Expand content animation */
+.service-expand-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Book Appointment button */
+.card-body .btn-primary {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #4c8aff, #1fc7ec);
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: "Nunito", "Inter", sans-serif;
+  font-size: 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-body .btn-primary:hover {
+  color: white !important;
+  box-shadow: 0 8px 20px rgba(0, 132, 255, 0.3);
+}
+
+/* Horizontal line */
 hr {
   height: 2px;
-  background-color: #000000; /* or any color */
+  background-color: #000000;
   border: none;
 }

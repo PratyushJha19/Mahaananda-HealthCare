@@ -67,19 +67,41 @@
   background-color: rgba(31, 31, 31, 0.75);
 }
 
+/* Override fixed width on hero card to be responsive */
 .hero-card {
   background: linear-gradient(to bottom right, #e0f7fa, #aa87ec);
   padding: 30px;
   border-radius: 25px;
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 340px; /* Responsive max width */
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
+.hero-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Center image and make it scale on small screens */
 .doctor-img {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 200px;
   border-radius: 15px;
   object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Optional: if you want text-align left on desktop only */
+@media (min-width: 768px) {
+  .hero-card.text-start {
+    text-align: left;
+  }
+
+  .hero-card.text-end {
+    text-align: right;
+  }
 }
 
 .doc-badge {
@@ -120,7 +142,7 @@
 }
 .card-text {
   padding-top: 20px;
-  color: #0040b7;
+  color: #0040b7 !important;
   font-size: x-large;
   font-weight: 600;
   font-family: "Outfit", "Inter", sans-serif;

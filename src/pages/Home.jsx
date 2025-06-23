@@ -27,37 +27,28 @@ const Home = () => {
 
           <button className="hero-btn mt-4">SEE OUR DOCTORS</button>
 
-          <div className="hero-content d-flex justify-content-between mt-5 position-relative">
+          <div className="hero-content row justify-content-center mt-5 gx-5">
             {/* Left Card */}
-            <div className="hero-card text-start">
-              <img src="Doc1.jpg" alt="Doctor 1" className="doctor-img" />
-              {/* <div className="doc-badge">
-              <i className="fas fa-tooth"></i>
-            </div> */}
-              <p className="card-text">
-                Hi, Welcome to{" "}
-                <span className="text-highlight">Mahaananda Healthcare</span>
-              </p>
-              {/* <div className="badge-group">
-              <span className="badge">Preventive Care</span>
-              <span className="badge">Modern Dentistry</span>
-            </div> */}
+            <div className="col-12 col-md-5 mb-4 mb-md-0 d-flex justify-content-center">
+              <div className="hero-card text-start">
+                <img src="Doc2.jpg" alt="Doctor 1" className="doctor-img" />
+                <p className="card-text">
+                  Hi, Welcome to
+                  <span className="text-highlight"> Mahaananda Healthcare</span>
+                </p>
+              </div>
             </div>
 
             {/* Right Card */}
-            <div className="hero-card text-end">
-              <img src="Doc2.jpg" alt="Doctor 2" className="doctor-img" />
-              {/* <div className="doc-badge">
-              <i className="fas fa-tooth"></i>
-            </div> */}
-              <p className="card-text">
-                Professionalism & Attention
-                <br />
-                Since 2025
-              </p>
-              {/* <div className="badge-group">
-              <span className="badge">Modern Dentistry</span>
-            </div> */}
+            <div className="col-12 col-md-5 d-flex justify-content-center">
+              <div className="hero-card text-end">
+                <img src="Doc1.jpg" alt="Doctor 2" className="doctor-img" />
+                <p className="card-text">
+                  Professionalism & Attention
+                  <br />
+                  Since 2025
+                </p>
+              </div>
             </div>
           </div>
         </section>

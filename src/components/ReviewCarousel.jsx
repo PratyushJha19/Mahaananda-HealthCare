@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/ReviewCarousel.css";
 
 const reviewImages = [
@@ -12,39 +12,36 @@ const reviewImages = [
   "review8.jpg",
 ];
 
+const itemsPerView = 3;
+
 const ReviewCarousel = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const itemsPerView = 3;
-
-  const goPrev = () => {
-    setStartIndex((prev) =>
-      prev === 0 ? reviewImages.length - itemsPerView : prev - 1
-    );
-  };
+  const [isSliding, setIsSliding] = useState(false);
 
   const goNext = () => {
-    setStartIndex((prev) =>
-      prev + itemsPerView >= reviewImages.length ? 0 : prev + 1
-    );
+    setIsSliding(true); // trigger animation
+    setTimeout(() => {
+      setStartIndex((prev) =>
+        prev + itemsPerView >= reviewImages.length ? 0 : prev + 1
+      );
+      setIsSliding(false); // reset animation
+    }, 400); // should match animation duration
   };
 
-  const visibleReviews = reviewImages.slice(
-    startIndex,
-    startIndex + itemsPerView
-  );
+  useEffect(() => {
+    const interval = setInterval(goNext, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
-  // Handle wrapping if at the end
-  while (visibleReviews.length < itemsPerView) {
-    visibleReviews.push(reviewImages[visibleReviews.length - itemsPerView]);
+  const visibleReviews = [];
+  for (let i = 0; i < itemsPerView; i++) {
+    const index = (startIndex + i) % reviewImages.length;
+    visibleReviews.push(reviewImages[index]);
   }
 
   return (
     <div className="carousel-wrapper">
-      <button className="nav left" onClick={goPrev}>
-        &#10094;
-      </button>
-
-      <div className="carousel-multi">
+      <div className={`carousel-multi ${isSliding ? "slide-left" : ""}`}>
         {visibleReviews.map((img, index) => (
           <img
             key={index}
@@ -54,10 +51,6 @@ const ReviewCarousel = () => {
           />
         ))}
       </div>
-
-      <button className="nav right" onClick={goNext}>
-        &#10095;
-      </button>
     </div>
   );
 };

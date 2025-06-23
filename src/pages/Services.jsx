@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../styles/Services.css";
 import ServiceFAQ from "../components/ServiceFAQ.jsx";
 
@@ -6,8 +6,8 @@ const services = [
   {
     title: "General Dentistry",
     number: "01",
-    desc: "Solution to fill empty spaces resulting from the loss of one or more teeth.",
-    img: "/Services/GeneralDentistry.jpg", // Place this in public folder or adjust the path
+    desc: "Comprehensive care and maintenance of a patient's oral health, focusing on preventing, diagnosing, and treating a wide range of dental issues. It involves routine checkups, cleanings, fillings, ,RCT and other restorative procedures etc",
+    img: "/Services/GeneralDentistry.jpg",
     icon: "🦷",
   },
   {
@@ -20,35 +20,35 @@ const services = [
   {
     title: "Implant",
     number: "03",
-    desc: "Professionals who handle a variety of general dental and oral care needs.",
+    desc: "Dental implants are artificial tooth roots, typically made of titanium, that are surgically placed into the jawbone to support a replacement tooth or teeth",
     img: "/Services/DentalImplants.jpg",
     icon: "🦷",
   },
   {
     title: "Root Canal Treatment",
     number: "04",
-    desc: "Focuses on detecting and treating dental caries or cavities that can affect overall oral health.",
+    desc: "It is a dental procedure to repair and save a badly damaged or infected tooth.",
     img: "/Services/RootCanal.jpg",
     icon: "🦷",
   },
   {
     title: "Crown & Bridges",
     number: "05",
-    desc: "Focuses on detecting and treating dental caries or cavities that can affect overall oral health.",
+    desc: "Crown is used to cover an existing tooth, a dental bridge is used to fill in the missing space caused by one or more lost teeth.",
     img: "/Services/CrownBridges.jpg",
     icon: "🦷",
   },
   {
     title: "Extraction",
     number: "06",
-    desc: "Focuses on detecting and treating dental caries or cavities that can affect overall oral health.",
+    desc: "Tooth extraction is a dental procedure to remove a tooth from its socket in the jawbone.",
     img: "/Services/Extraction.jpg",
     icon: "🦷",
   },
   {
     title: "Filling",
     number: "07",
-    desc: "Focuses on detecting and treating dental caries or cavities that can affect overall oral health.",
+    desc: "Filling is a restorative dental procedure used to repair teeth damaged by decay or trauma",
     img: "/Services/Fillings.jpg",
     icon: "🦷",
   },
@@ -76,12 +76,19 @@ const services = [
 ];
 
 const Services = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex(index === expandedIndex ? null : index);
+  };
+
   return (
     <div>
       <h1 className="text-center ser-head">
         Professional Care, <br />
         Bright Smiles
       </h1>
+
       <div className="container py-5">
         <div className="row g-4">
           {services.map((item, index) => (
@@ -97,12 +104,30 @@ const Services = () => {
                     {item.icon}
                   </div>
                 </div>
+
                 <div className="card-body">
-                  <h2 className="card-title fw-bold text-white">
-                    {item.title}
-                  </h2>
-                  <p className="card-text">{item.desc}</p>
-                  <div className="d-flex justify-content-between align-items-center"></div>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <h2 className="card-title fw-bold text-white m-0">
+                      {item.title}
+                    </h2>
+                    <button
+                      className="toggle-btn"
+                      onClick={() => toggleExpand(index)}
+                    >
+                      {expandedIndex === index ? "▲" : "▼"}
+                    </button>
+                  </div>
+
+                  {expandedIndex === index && (
+                    <div className="mt-3 service-expand-content">
+                      <p className="card-text">{item.desc}</p>
+                      <div className="text-center">
+                        <a className="btn btn-primary" href="/contact">
+                          Book Appointment
+                        </a>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <hr />
               </div>
@@ -111,16 +136,8 @@ const Services = () => {
         </div>
       </div>
 
-      <ServiceFAQ></ServiceFAQ>
+      <ServiceFAQ />
     </div>
-
-    //  <a
-    //   href="#"
-    //   className="text-primary fw-semibold text-decoration-none"
-    // >
-    //   Learn More →
-    // </a>
-    // <span className="text-muted fw-bold">{item.number}</span>
   );
 };
 
