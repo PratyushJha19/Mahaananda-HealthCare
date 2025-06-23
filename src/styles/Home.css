@@ -1,9 +1,25 @@
-.home-head {
-  background-image: url("/public/tooth.png"); /* adjust path if in /public */
+.page-wrapper {
+  background-image: url("/public/tooth.png"); /* adjust path if needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.home-head,
+.sec-3,
+.sec-4 {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    background: radial-gradient(circle, #82b0e7, #77dbff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
 }
 
 .hero-section {
@@ -142,8 +158,15 @@
 }
 .card-text {
   padding-top: 20px;
-  color: #0040b7 !important;
   font-size: x-large;
+  font-weight: 600;
+  font-family: "Outfit", "Inter", sans-serif;
+}
+
+.card-p {
+  color: #000851 !important;
+  padding-top: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-family: "Outfit", "Inter", sans-serif;
 }
@@ -207,13 +230,13 @@
 } */
 
 /* SECTION 3 */
-.sec-3 {
-  background-image: url("/public/tooth.png"); /* adjust path if in /public */
-  background-size: cover;
+/* .sec-3 {
+  background-image: url("/public/tooth.png"); adjust path if in /public */
+/* background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 .sec-3-head {
   background-color: rgba(38, 38, 38, 0.25);
   padding-top: 30px;
@@ -252,13 +275,13 @@
 
 /* ------------------------------------------------- */
 
-.sec-4 {
-  background-image: url("/public/tooth.png"); /* adjust path if in /public */
+/* .sec-4 {
+  background-image: url("/public/tooth.png"); adjust path if in /public
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 
 .sec-4-head {
   background-color: rgba(38, 38, 38, 0.25);

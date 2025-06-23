@@ -17,7 +17,7 @@ const services = [
 
 const Home = () => {
   return (
-    <div>
+    <div className="page-wrapper">
       <div className="home-head">
         <section className="hero-section d-flex flex-column align-items-center text-center">
           <h1 className="hero-title">
@@ -32,10 +32,7 @@ const Home = () => {
             <div className="col-12 col-md-5 mb-4 mb-md-0 d-flex justify-content-center">
               <div className="hero-card text-start">
                 <img src="Doc2.jpg" alt="Doctor 1" className="doctor-img" />
-                <p className="card-text">
-                  Hi, Welcome to
-                  <span className="text-highlight"> Mahaananda Healthcare</span>
-                </p>
+                <p className="card-p">Hi, Welcome to Mahaananda Healthcare</p>
               </div>
             </div>
 
@@ -43,11 +40,7 @@ const Home = () => {
             <div className="col-12 col-md-5 d-flex justify-content-center">
               <div className="hero-card text-end">
                 <img src="Doc1.jpg" alt="Doctor 2" className="doctor-img" />
-                <p className="card-text">
-                  Professionalism & Attention
-                  <br />
-                  Since 2025
-                </p>
+                <p className="card-p">Professionalism & Attention Since 2025</p>
               </div>
             </div>
           </div>
