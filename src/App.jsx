@@ -5,6 +5,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Layout from "./components/Layout.jsx";
 import Services from "./pages/Services.jsx";
+import Doctors from "./pages/Doctors.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/team" element={<Doctors />} />
         </Routes>
       </Layout>
     </Router>

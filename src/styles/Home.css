@@ -52,6 +52,7 @@
   font-weight: 600;
   font-size: 25px;
   font-family: "Nunito", "Inter", sans-serif;
+  text-decoration: none !important;
 }
 
 /* .hero-btn {

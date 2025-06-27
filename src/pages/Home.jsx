@@ -26,7 +26,9 @@ const Home = () => {
             <span className="gradient-text">a Brighter Life</span>
           </h1>
 
-          <button className="hero-btn mt-4">SEE OUR DOCTORS</button>
+          <Link className="hero-btn mt-4" to={"/team"}>
+            SEE OUR DOCTORS
+          </Link>
 
           <div className="hero-content row justify-content-center mt-5 gx-5">
             {/* Left Card */}

@@ -108,7 +108,8 @@ const Footer = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           © 2025 Copyright:{" "}
-          <span className="fw-700">Mahaananda Healthcare</span>
+          <span className="fw-700">Mahaananda Healthcare</span> <br />
+          Made by Pratyush Jha
         </div>
       </footer>
     </div>

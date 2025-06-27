@@ -1,0 +1,95 @@
+.contact-wrapper {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #4d6aff;
+  /* border: 1px solid #d3e1ff; */
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0e1b3a;
+  margin-bottom: 50px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-card {
+  background: #f7f7f7;
+  padding: 40px 30px 20px;
+  border-radius: 25px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contact-card.phone {
+  background: linear-gradient(to bottom right, #80bfff, #98c7ff);
+}
+
+.contact-card.location {
+  background: linear-gradient(to bottom right, #ffcb69, #ffe689);
+}
+
+.contact-card.email {
+  background: linear-gradient(to bottom right, #52ff6e, #4aff9e);
+}
+
+.icon-circle {
+  position: relative;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.phone {
+  background: #738fff;
+}
+
+.icon-circle.email {
+  background: #00ff9d;
+}
+
+.icon-circle.location {
+  background: #ff8c00;
+}
+
+.contact-info {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-tag {
+  position: absolute;
+  right: -150px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
