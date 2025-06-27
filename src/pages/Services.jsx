@@ -83,56 +83,57 @@ const Services = () => {
   };
 
   return (
-    <div>
-      <h1 className="text-center ser-head">
-        Professional Care, <br />
-        Bright Smiles
-      </h1>
+    <div className="page-wrapper">
+      <div className="page-cover">
+        <h1 className="text-center ser-head">
+          Professional Care, <br />
+          Bright Smiles
+        </h1>
 
-      <div className="container py-5">
-        <div className="row g-4">
-          {services.map((item, index) => (
-            <div className="col-md-6" key={index}>
-              <div className="card service-card border-0 shadow-sm">
-                <div className="position-relative">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="card-img-top rounded-4"
-                  />
-                  <div className="icon-circle position-absolute top-0 start-0 translate-middle">
-                    {item.icon}
-                  </div>
-                </div>
-
-                <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h2 className="card-title fw-bold text-white m-0">
-                      {item.title}
-                    </h2>
-                    <button
-                      className="toggle-btn"
-                      onClick={() => toggleExpand(index)}
-                    >
-                      {expandedIndex === index ? "▲" : "▼"}
-                    </button>
-                  </div>
-
-                  {expandedIndex === index && (
-                    <div className="mt-3 service-expand-content">
-                      <p className="card-text">{item.desc}</p>
-                      <div className="text-center">
-                        <a className="btn btn-primary" href="/contact">
-                          Book Appointment
-                        </a>
-                      </div>
+        <div className="container py-5">
+          <div className="row g-4">
+            {services.map((item, index) => (
+              <div className="col-md-6" key={index}>
+                <div className="card service-card border-0 shadow-sm">
+                  <div className="position-relative">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="card-img-top"
+                    />
+                    <div className="icon-circle position-absolute top-0 start-0 translate-middle">
+                      {item.icon}
                     </div>
-                  )}
+                  </div>
+
+                  <div className="card-body">
+                    <div className="d-flex justify-content-between align-items-center">
+                      <h2 className="card-title fw-bold text-white m-0">
+                        {item.title}
+                      </h2>
+                      <button
+                        className="toggle-btn"
+                        onClick={() => toggleExpand(index)}
+                      >
+                        {expandedIndex === index ? "▲" : "▼"}
+                      </button>
+                    </div>
+
+                    {expandedIndex === index && (
+                      <div className="mt-3 service-expand-content">
+                        <p className="card-text">{item.desc}</p>
+                        <div className="text-center">
+                          <a className="btn btn-primary" href="/contact">
+                            Book Appointment
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
-                <hr />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 

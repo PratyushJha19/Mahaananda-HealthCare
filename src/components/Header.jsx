@@ -54,11 +54,11 @@ function Navbar() {
                   Team
                 </Link>
               </li>
-              <li className="nav-item nav-btn">
+              {/* <li className="nav-item nav-btn">
                 <Link className="nav-link text-primary" to="/about">
                   About
                 </Link>
-              </li>
+              </li> */}
             </ul>
 
             {/* CTA Button */}

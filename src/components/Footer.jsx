@@ -27,11 +27,11 @@ const Footer = () => {
                     Contact
                   </Link>
                 </p>
-                <p className="">
+                {/* <p className="">
                   <Link to={"/about"} className="foot-btn">
                     About
                   </Link>
-                </p>
+                </p> */}
                 <p className="">
                   <Link to={"/services"} className="foot-btn">
                     Services
