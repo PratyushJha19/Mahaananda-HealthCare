@@ -35,7 +35,7 @@ const Home = () => {
             <div className="col-12 col-md-5 mb-4 mb-md-0 d-flex justify-content-center">
               <div className="hero-card text-start">
                 <img src="Doc2.jpg" alt="Doctor 1" className="doctor-img" />
-                <p className="card-p">Hi, Welcome to Mahaananda Healthcare</p>
+                <p className="card-p">Hi, Welcome to Maha-Nanda Healthcare</p>
               </div>
             </div>
 
@@ -76,17 +76,17 @@ const Home = () => {
               </div>
 
               <div className="col-md-6">
-                <p className="sec-3-txt">
-                  Mahaanda healthcare is the top healthcare dental clinic in
-                  dehradun..We provide comprehensive family oral Healthcare
+                <p className="sec-3-txt text-center">
+                  Maha-Nanda healthcare is the top healthcare dental clinic in
+                  dehradun. We provide comprehensive family oral Healthcare
                   services at affordable prices. Our clinic offers a wide range
-                  of oral health services, including Implant, RCT,extraction,
+                  of oral health services, including Implant, RCT, extraction,
                   Filling, Bleaching(teeth whitening) Smile designing and many
-                  more.Utilizing cutting-edge technology and a strong commitment
-                  to excellence, we ensure your well-being is our top priority.
-                  From preventive care to advanced treatments, we offer
-                  everything you need under one roof. Choose mahaannda
-                  healthcare for quality care in the heart of Dehradun where
+                  more. Utilizing cutting-edge technology and a strong
+                  commitment to excellence, we ensure your well-being is our top
+                  priority. From preventive care to advanced treatments, we
+                  offer everything you need under one roof. Choose Maha-Nanda
+                  Healthcare for quality care in the heart of Dehradun where
                   your oral health always comes first.
                 </p>
               </div>

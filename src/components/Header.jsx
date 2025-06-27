@@ -14,7 +14,7 @@ function Navbar() {
           >
             <img src="/logo.jpg" alt="logo" height="75" width="75" />
             <h1 className="px-2 text-nowrap">
-              Mahaananda
+              Maha-Nanda
               <br />
               Healthcare
             </h1>

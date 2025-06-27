@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h3 className="text-uppercase mb-4 fw-bold">
-                  Mahaananda Healthcare
+                  Maha-Nanda Healthcare
                 </h3>
                 <p className="">
                   <Link to={"/"} className="foot-btn">
@@ -108,7 +108,7 @@ const Footer = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           © 2025 Copyright:{" "}
-          <span className="fw-700">Mahaananda Healthcare</span> <br />
+          <span className="fw-700">Maha-Nanda Healthcare</span> <br />
           Made by Pratyush Jha
         </div>
       </footer>
