@@ -49,11 +49,11 @@ function Navbar() {
                   Services
                 </Link>
               </li>
-              {/* <li className="nav-item nav-btn">
-                <Link className="nav-link text-primary" to="/doctors">
-                  Doctors
+              <li className="nav-item nav-btn">
+                <Link className="nav-link text-primary" to="/team">
+                  Team
                 </Link>
-              </li> */}
+              </li>
               <li className="nav-item nav-btn">
                 <Link className="nav-link text-primary" to="/about">
                   About

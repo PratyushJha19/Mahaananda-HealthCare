@@ -1,0 +1,123 @@
+.page-wrapper {
+  background-image: url("/public/tooth.png"); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-cover {
+  background-color: rgba(38, 38, 38, 0.25);
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    background: radial-gradient(circle, #88beff, #74daff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  .doctor-grid {
+    grid-template-columns: 1fr !important; /* One column on small screens */
+  }
+}
+
+.doctor-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.doctor-label {
+  font-weight: 600;
+  color: #193fff;
+  /* border: 1px solid #d3e1ff; */
+  display: inline-block;
+  padding: 30px 15px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.doctor-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0e1b3a;
+  margin-bottom: 50px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 40px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.doctor-card {
+  background: radial-gradient(circle, #9b76ffad, #52d1ff97);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-grid > .doctor-card:nth-child(3):nth-last-child(1) {
+  grid-column: 1 / -1; /* span both columns */
+  justify-self: center;
+  width: 100%;
+  max-width: 400px; /* Match normal card width */
+}
+
+.doctor-img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.doctor-name {
+  margin: 20px 0 5px;
+  font-size: 1.5rem;
+  color: #0e1b3a;
+  font-weight: 600;
+}
+
+.doctor-speciality {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #0e1b3a;
+}
+
+.expand-btn {
+  background-color: #0e1b3a;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  font-family: "Nunito", "Inter", sans-serif;
+}
+
+.expand-btn:hover {
+  background-color: #193fff;
+}
+
+.doctor-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #0e1b3a;
+  background-color: #ffffffa1;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Nunito", "Inter", sans-serif;
+  font-weight: 500;
+}
